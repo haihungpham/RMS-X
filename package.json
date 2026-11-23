@@ -1,0 +1,30 @@
+{
+  "name": "rms-x-ra-recruitment",
+  "version": "0.1.0",
+  "private": true,
+  "description": "RMS-X RA recruitment and onboarding (DEPI Lab). Next.js port of the Rev0 MVP with PRD revisions R3-R7.",
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "next start -p 3001",
+    "prod": "next build && next start -p 3001",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "build:server": "node scripts/server-mode.mjs build",
+    "start:server": "node scripts/server-mode.mjs start"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.3.0",
+    "next": "15.5.28",
+    "react": "19.2.9",
+    "react-dom": "19.2.9",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.5",
+    "@types/react": "19.2.0",
+    "@types/react-dom": "19.2.0",
+    "typescript": "5.9.3",
+    "vitest": "3.2.7"
+  }
+}
